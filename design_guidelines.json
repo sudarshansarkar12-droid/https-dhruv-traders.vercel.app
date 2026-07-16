@@ -1,0 +1,125 @@
+{
+  "theme": "Dark Mode Only - 'Architectural Finance / High-End Trading Terminal'. A fusion of luxury editorial layout and raw technological momentum.",
+  "typography": {
+    "fonts": [
+      {
+        "name": "Bodoni Moda",
+        "type": "heading",
+        "weight": "400, 600",
+        "usage": "Massive Hero text, Manifesto Chapter Numbers (e.g., '01', '02'), and huge editorial pull-quotes. Brings an unexpected high-fashion, luxury editorial feel to the finance space."
+      },
+      {
+        "name": "Azeret Mono",
+        "type": "accent",
+        "weight": "400, 700",
+        "usage": "Market tickers, live data, stats counters, overlines, and small utility tags. Brings the 'terminal/tech' aesthetic."
+      },
+      {
+        "name": "Manrope",
+        "type": "body",
+        "weight": "300, 400, 500",
+        "usage": "All paragraph text and standard UI labels. Clean, geometric, and highly readable."
+      }
+    ],
+    "rules": [
+      "NO Inter or Space Grotesk allowed.",
+      "Headings (Bodoni Moda) must have tight tracking (tracking-tighter) and tight leading (leading-none).",
+      "Overlines (Azeret Mono) must be uppercase, tiny (text-xs or text-sm), and wide (tracking-[0.2em])."
+    ]
+  },
+  "colors": {
+    "background": {
+      "primary": "#09090B",
+      "secondary": "#18181B",
+      "tertiary": "#27272A"
+    },
+    "text": {
+      "primary": "#FAFAFA",
+      "secondary": "#A1A1AA",
+      "muted": "#71717A"
+    },
+    "accent": {
+      "primary": "#FF5500",
+      "hover": "#CC4400",
+      "glow": "rgba(255, 85, 0, 0.5)",
+      "description": "Electric Tangerine. A kinetic, non-purple signature color symbolizing untamed momentum and high-stakes trading. Used sparingly for critical CTAs, chart highlights, and the ticker up-trends."
+    },
+    "rules": [
+      "No generic full-screen gradients. Keep backgrounds solid or use subtle noise/grain textures.",
+      "Never use pure transparent backgrounds for the sticky header; use backdrop-blur-xl with bg-black/70 to ensure readability.",
+      "Ensure all text against dark backgrounds meets APCA contrast standards."
+    ]
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous Spacing & Tension. Use massive padding (py-32, py-40) between sections. Avoid symmetrical 'Bootstrap' centers; rely on asymmetrical Bento grids and left-aligned editorial flow.",
+    "grid_system": "Use 12-column CSS grid (grid-cols-1 md:grid-cols-12) for the Manifesto and Services sections. Span elements unevenly (e.g., col-span-4 for a title, col-span-7 for body with an offset)."
+  },
+  "motion_and_interaction": {
+    "scrolling": "MANDATORY: Use '@studio-freight/react-lenis' for smooth, momentum-based scrolling. It makes the site feel premium and weighty.",
+    "reveals": "MANDATORY: Kinetic line-by-line masked reveals. For major headings, wrap each line in an overflow-hidden container, and animate the text upwards (y: '100%' to 0) using framer-motion.",
+    "parallax": "Use framer-motion (useScroll, useTransform) to create a subtle Y-axis parallax effect on the hero background image and the platform dashboard image.",
+    "micro_interactions": "Buttons should have a magnetic hover effect or a sweeping background color fill. Hovering on service cards should slightly dim sibling cards."
+  },
+  "image_urls": {
+    "hero_background": [
+      {
+        "url": "https://images.unsplash.com/photo-1506606401543-2e73709cebb4",
+        "description": "Dark aerial city skyline at night. Use with heavy black overlay (bg-black/60) and parallax scroll."
+      }
+    ],
+    "platform_preview": [
+      {
+        "url": "https://images.unsplash.com/photo-1628763228263-d9ebb07bd0d9",
+        "description": "Glowing red/pink financial numbers on a dark screen. Use as a clipped, spotlighted feature image."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1516031190212-da133013de50",
+        "description": "Laptop showing trading charts in the dark. Use for the dashboard mockup."
+      }
+    ],
+    "commodities_services": [
+      {
+        "url": "https://images.unsplash.com/photo-1610375461246-83df859d849d",
+        "description": "Stacked gold bars in the dark. Use for the Commodities/Forex service card."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1498262257252-c282316270bc",
+        "description": "Abstract curved architecture. Use for Indices/Momentum service card."
+      }
+    ],
+    "app_download": [
+      {
+        "url": "https://images.unsplash.com/photo-1600856209923-34372e319a5d",
+        "description": "Hand holding a smartphone in the dark with a blue/bright glow. Perfect for the APK download section."
+      }
+    ]
+  },
+  "sections_breakdown": {
+    "header": "Glassmorphic top nav. Logo in Bodoni Moda (DHRUV TRADERS). Minimal links. 'Open Account' CTA button in solid #FF5500. MUST have background blur (bg-black/80 backdrop-blur-md) so content behind it doesn't clash.",
+    "hero": "Massive Bodoni Moda text. Kinetic line-by-line reveal: 'MASTER', 'THE UNTAMED', 'MARKET'. Background is the dark city skyline with subtle parallax. A small 'Scroll to explore' indicator animated at the bottom.",
+    "marquee": "Use 'react-fast-marquee'. A continuous, slow, border-top/bottom editorial ribbon displaying live currency pairs (EUR/USD, GBP/USD, XAU/USD, BTC/USD) in Azeret Mono font. Bright green for uptrend, #FF5500 for downtrend.",
+    "manifesto": "Numbered chapters (01 Precision, 02 Discipline, etc.). Layout: Number (Bodoni Moda text-[15vw] text-zinc-800) in the background, overlapping with crisp white text. Asymmetrical arrangement.",
+    "services": "Bento grid of instruments (Forex, Crypto, Commodities, Indices). Use the gold bars and abstract architecture images. Apply 'The Tracing Beam' or a 1px border hover effect (border-white/20) on cards.",
+    "platform_preview": "A large editorial framing of the trading dashboard. Use the glowing numbers and laptop images. Add a 'floating' stats card overlapping the image via absolute positioning.",
+    "statistics": "Massive counters (Azeret Mono) for Win Rate, Volume Traded, Active Traders. Use a layout that separates them with 1px vertical borders.",
+    "community_social": "Massive brutalist blocks for YouTube, Telegram, and Facebook. Hovering expands a glowing #FF5500 border or arrow icon. Do not use standard small icons; make the typography the hero.",
+    "app_download": "Split section: Left side is the smartphone image with a clipped frame. Right side is large typography 'TRADE ANYWHERE. ANYTIME.' with a bold 'Download APK' button.",
+    "footer": "Massive Bodoni Moda 'DHRUV' spanning the entire width (text-[15vw]). Standard links, risk disclaimer in small text, copyright."
+  },
+  "accessibility_and_testing": {
+    "data_testid": "MANDATORY: Add `data-testid` to all buttons, links, and major interactive elements. E.g., `data-testid='hero-cta-button'`, `data-testid='nav-login-link'`."
+  },
+  "component_rules": {
+    "buttons": "Pill-shaped or sharp rectangular. Primary CTAs use bg-[#FF5500] text-white. Secondary CTAs use transparent background with a 1px solid white border. Include arrow icons (Lucide/Phosphor) that animate x-axis on hover.",
+    "cards": "Cardless or sharp rectangles. No soft, muddy drop shadows. Use 1px inner borders (border-white/10) with solid dark backgrounds (bg-zinc-900)."
+  },
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Prioritize motion and craft over everything else. The site must feel like an Awwwards winner.",
+    "Do not center-align everything. Use left-alignment for paragraphs and varied grid spans to create tension.",
+    "Use framer-motion for ALL scroll reveals. Wrap items in <motion.div> and use `whileInView={{ opacity: 1, y: 0 }}`, `initial={{ opacity: 0, y: 50 }}` with `viewport={{ once: true, margin: '-100px' }}`.",
+    "No generic placeholder images. ONLY use the provided Unsplash URLs.",
+    "No emojis for icons. Use `lucide-react`.",
+    "Implement Lenis for smooth scrolling at the root App level.",
+    "Add 'transition-all duration-300' to hover states (colors, borders), but NOT for transforms. Use framer-motion for transforms."
+  ]
+}
