@@ -12,7 +12,7 @@ export default function Footer() {
               Custody of capital. <em className="italic text-white/60">Curation of edge.</em>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#app" data-testid="footer-cta" className="cta-primary group">
+              <a href="#brokers" data-testid="footer-cta" className="cta-primary group">
                 Open Account
                 <ArrowUpRight size={14} />
               </a>

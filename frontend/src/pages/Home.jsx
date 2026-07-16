@@ -9,6 +9,7 @@ import Marquee from "@/components/site/Marquee";
 import Community from "@/components/site/Community";
 import AppDownload from "@/components/site/AppDownload";
 import Testimonials from "@/components/site/Testimonials";
+import Brokers from "@/components/site/Brokers";
 import Contact from "@/components/site/Contact";
 import Footer from "@/components/site/Footer";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Stats />
       <Marquee />
       <Testimonials />
+      <Brokers />
       <AppDownload />
       <Community />
       <Contact />

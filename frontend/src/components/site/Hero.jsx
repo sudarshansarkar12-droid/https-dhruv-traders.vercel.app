@@ -85,7 +85,7 @@ export default function Hero() {
               transition={{ delay: 1.25, duration: 0.9 }}
               className="md:col-span-4 md:col-start-8 flex flex-wrap gap-3"
             >
-              <a href="#app" data-testid="hero-cta-primary" className="cta-primary group">
+              <a href="#brokers" data-testid="hero-cta-primary" className="cta-primary group">
                 Open Account
                 <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>

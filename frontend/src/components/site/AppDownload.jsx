@@ -61,7 +61,9 @@ export default function AppDownload() {
             <ScrollReveal delay={0.2}>
               <div className="flex flex-wrap gap-3 mb-10">
                 <a
-                  href="#"
+                  href="https://office-chat-hub-1.preview.emergentagent.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   data-testid="download-apk-btn"
                   className="cta-primary group"
                 >
@@ -69,7 +71,9 @@ export default function AppDownload() {
                   Download APK
                 </a>
                 <a
-                  href="#"
+                  href="https://office-chat-hub-1.preview.emergentagent.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   data-testid="download-playstore-btn"
                   className="cta-ghost"
                 >

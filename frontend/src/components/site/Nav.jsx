@@ -13,7 +13,7 @@ export default function Nav() {
   const links = [
     { label: "Markets", href: "#instruments" },
     { label: "Platform", href: "#platform" },
-    { label: "Academy", href: "#manifesto" },
+    { label: "Brokers", href: "#brokers" },
     { label: "Community", href: "#community" },
   ];
 
@@ -60,7 +60,7 @@ export default function Nav() {
             Sign in
           </a>
           <a
-            href="#app"
+            href="#brokers"
             data-testid="nav-cta"
             className="cta-primary group"
           >
